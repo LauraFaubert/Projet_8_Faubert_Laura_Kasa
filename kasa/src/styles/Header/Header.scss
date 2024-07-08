@@ -1,0 +1,27 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+        width: 210.32px;
+        height: 68px;
+    }
+    nav{
+        ul{
+            display: flex;
+           a{
+            text-decoration: none;
+            color:#000000 ;
+            &.underline{
+                text-decoration: underline;
+            }
+           }
+           li{
+            justify-content: space-between;
+           }
+        }
+        
+    }
+
+}

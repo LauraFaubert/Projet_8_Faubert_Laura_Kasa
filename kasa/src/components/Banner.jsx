@@ -1,7 +1,7 @@
 import logoKasa from '../assets/images/LOGO.png';
 import { NavLink } from 'react-router-dom';
 
-const Header =() =>{
+const Banner =() =>{
     return(
         <div className="header">
             <img src={logoKasa} alt="Logo Kasa"/>
@@ -19,4 +19,4 @@ const Header =() =>{
         </div>
     )
 }
-export default Header
+export default Banner

@@ -1,0 +1,34 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1240px;
+    height: 68px;
+    margin: 40px 100px 0 100px;
+
+    img{
+        width: 210.32px;
+        height: 68px;
+    }
+    nav{
+        ul{
+            display: flex;
+            gap: 57px;
+           a{
+            text-decoration: none;
+            color:#000000 ;
+            font-size: 1.5rem;
+            &.underline{
+                text-decoration: underline;
+            }
+           }
+           li{
+            display: flex;
+            justify-content: space-between;
+           }
+        }
+        
+    }
+
+}

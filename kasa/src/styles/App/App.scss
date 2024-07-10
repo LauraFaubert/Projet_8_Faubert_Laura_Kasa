@@ -5,3 +5,10 @@ body{
 	font-family: 'Montserrat';
     background-color:#FFFFFF ;
 }
+#root{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+
+}

@@ -1,6 +1,24 @@
-const Home =() =>{
+import React from "react";
+import Card from "../components/Card";
+import Banner from "../components/Banner";
+import'../styles/HomePage/HomePage.scss';
+
+function Home({logements}){
     return(
-        <div><h1>Je suis sur la  page accueil</h1></div>
+        <div className="home">
+            <Banner />
+            <div className="card_container">
+                {logements.map(logement =>(
+                     <Card
+                     key={logement.id}
+                     id={logement.id}
+                     title={logement.title}
+                     cover={logement.cover}
+                     />
+
+                ))}
+            </div>
+        </div>
     )
 
 }

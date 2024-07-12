@@ -1,0 +1,40 @@
+.logement{
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_title_host{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }   
+    &_title{
+        font-size: 2.25rem;
+        font-weight: 500;
+        color:#FF6060;
+    }
+    &_location{
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &_collapse{
+        width: 100%;
+        display: flex;
+        gap: 76px;
+        justify-content: space-between;
+
+        p{
+            height: 182px;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            height: 182px;
+            gap:10px;
+        }
+    }
+}

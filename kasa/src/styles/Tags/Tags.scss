@@ -1,0 +1,19 @@
+.tags{
+    display: flex;
+    gap:0.625rem;
+    height: 25px;
+    margin-bottom: 1.5rem;
+
+    .tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF6060;
+        color:#FFFFFF;
+        font-size:0.875rem;
+        font-weight: 700;
+        border-radius: 10px;
+        height: 100%;
+        padding:0px 30px;
+    }
+}

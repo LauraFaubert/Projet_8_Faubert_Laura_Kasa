@@ -1,5 +1,6 @@
 import starActive from '../assets/images/Star/star_active .png';
 import starInactive from '../assets/images/Star/star_inactive .png';
+import '../styles/Rating/Rating.scss'
 
 function Rating ({rating}){
     const totalStars = 5;

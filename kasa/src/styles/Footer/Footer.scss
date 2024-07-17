@@ -2,18 +2,38 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 116.1296%;
     max-height: 209px;
     background-color: #000;
     color: white;
     gap:30px;
     padding: 70px;
+    @media screen and (max-width:1024px) {
+        width: 104.0658%; 
+        
+    }
+    @media screen and (max-width:768px) {
+        width: 111.941%;
+        padding: 66px 120px 58px 120px;
+    }
 
     &_logo{
         width:122px;
         height: 40px;
     }
     & p{
-        font-size: 24px;
+        font-size: 1.5rem;
+        @media screen and (max-width:1024px) {
+            font-size: 0.75rem ;
+            text-align: center;
+            width: 322px;
+            
+        }
+        @media screen and (max-width:768px) {
+            font-size: 0.75rem ;
+            text-align: center;
+            width: 122px;
+            
+        }
     }
 }

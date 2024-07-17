@@ -6,17 +6,26 @@
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
+        @media screen and (max-width:1024px) {
+            height: 298px;
+            
+        }
+        @media screen and (max-width:768px) {
+            height: 255px ;
+            
+        }
+
     }
     .card_title{
         color:#FFFFFF;
         max-width:300px ;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
         display: flex;
         text-decoration: none;
         position: absolute;
-        left: 20px;
-        bottom: 20px;
+        left: 7%;
+        bottom:77%;
         
     }
 }

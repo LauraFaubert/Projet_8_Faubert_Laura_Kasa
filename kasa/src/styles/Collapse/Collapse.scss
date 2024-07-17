@@ -1,7 +1,8 @@
 .collapse{
     display: flex;
     flex-direction: column;
-    width: 83%;
+    width: 100%;
+    
     
     &_button {
         display: flex;
@@ -16,30 +17,56 @@
         font-size: 1.125rem;
         font-weight: 700;
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 10px 15px;
+        @media screen and (max-width:1024px) {
+            font-size: 1.125rem;
+            border-radius: 5px;
+        }
+        @media screen and (max-width:768px) {
+            font-size:0.813rem;
+            padding: 10px 6px 10px 10px;
+            border-radius: 5px;
+        }
 
 
     }
     &_content{
         background-color: #F6F6F673;
         border-radius: 0px 0px 5px 5px;
-        font-size: 18px;
+        font-size: 1.125rem;
         padding: 20px;
         max-height: 0px;
         opacity: 0;
         overflow: hidden;
         z-index: 1;
+        display: none;
+        @media screen and (max-width:1024px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width:768px) {
+            font-size:0.75rem;
+        }
        
     }
     
 }
 .arrow{
     transition: transform 0.3s ease;
+    @media screen and (max-width:1024px) {
+        font-size: 1.125rem;
+        width: 18px;
+        height: 18px;
+    }
+    @media screen and (max-width:768px) {
+        font-size:0.813rem;
+        
+    }
 }
 .rotate{
     transform: rotate(180deg);
 }
 .expand {
+    display: block;
     max-height: 225px;
     opacity: 1;
     transform: translateY(0);

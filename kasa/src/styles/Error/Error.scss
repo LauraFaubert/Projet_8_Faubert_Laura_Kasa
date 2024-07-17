@@ -5,19 +5,57 @@
     align-items: center;
     gap:8.70rem;
     margin: 8.70rem 0;
+    @media screen and (max-width:1024px) {
+        gap: 7.875rem;
+        margin: 5.625rem 0;
+       
+    }
+    @media screen and (max-width:768px) {
+        gap:7.063rem;
+        margin: 5.375rem 0;
+        
+    }
     h1{
         font-size: 18rem;
         font-weight: 700;
         color:#FF6060;
+        @media screen and (max-width:1024px) {
+            font-size: 12rem;
+           
+        }
+        @media screen and (max-width:768px) {
+            font-size:6rem;
+            
+        }
+        
     }
     p{
         font-size: 2.25rem;
         font-weight: 500;
         color:#FF6060;
+        @media screen and (max-width:1024px) {
+            font-size: 1.75rem;
+            text-align: center;
+           
+        }
+        @media screen and (max-width:768px) {
+            font-size:1.125rem;
+            height: auto;
+            white-space: pre-line;
+            
+        }
     }
     .error_BackTo{
         font-size:1.125rem ;
         color:#000000;
+        @media screen and (max-width:1024px) {
+            font-size: 1.75rem;
+           
+        }
+        @media screen and (max-width:768px) {
+            font-size:0.875rem;
+            
+        }
 
     }
 }

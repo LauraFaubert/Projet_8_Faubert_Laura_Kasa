@@ -1,13 +1,26 @@
 body{
     max-width: 1440px;
+    width: 100%;
     display: flex;
+    align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat';
     background-color:#FFFFFF ;
+    
 }
 #root{
     display: flex;
+    width: 86.1115%;
+    height: auto;
     align-items: center;
     flex-direction: column;
     gap:50px;
+    @media screen and (max-width:1024px) {
+        gap:38px;
+        width:96.094% ;
+    }
+    @media screen and (max-width:768px) {
+        gap:27px;
+        width:89.335% ;
+    }
 }

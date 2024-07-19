@@ -1,4 +1,4 @@
-
+import '../styles/Host/Host.scss'
 
 function Host ({name, picture}){
     const [firstName, lastName] = name.split (' ');

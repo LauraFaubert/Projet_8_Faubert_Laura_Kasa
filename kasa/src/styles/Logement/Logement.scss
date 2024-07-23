@@ -5,22 +5,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:30px ;
+    @media screen and (max-width:1024px) {
+        gap:25px;
+        
+    }
+    @media screen and (max-width:768px) {
+        gap:20px;
+        
+    }
 
     &_title_host{
-        margin-top: 30px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width:1024px) {
-            margin-top: 23px;
-            
-        }
+        flex-wrap: wrap;
+       
         @media screen and (max-width:768px) {
-            margin-top: 15px;
             flex-direction: column;
             
         }
-    }   
+    }
+    
     &_title{
         font-size: 2.25rem;
         font-weight: 500;
@@ -48,12 +54,20 @@
             
         }
     }
+    &_tags{
+        @media screen and (max-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
     &_details{
        display: flex;
        flex-direction: column;
         @media screen and (max-width:768px) {
            flex-direction: row-reverse;
            justify-content: space-between;
+           flex-wrap: wrap;
+           margin-top: 16px ;
             
         }
     }

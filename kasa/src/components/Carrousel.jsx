@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import arrow_left from '../assets/images/Arrow/Arrow_left.png';
-import arrow_right from '../assets/images/Arrow/Arrow_right.png';
+import React, { useState } from "react";
+import arrow_left from "../assets/images/Arrow/Arrow_left.png";
+import arrow_right from "../assets/images/Arrow/Arrow_right.png";
 import "../styles/Carrousel/Carrousel.scss";
 
 function Carrousel({ pictures }) {
@@ -21,17 +21,23 @@ function Carrousel({ pictures }) {
   }
 
   return (
-    <div className='carrousel'>
-      <button className='carrousel_arrow_left' onClick={prevSlide}>
-        <img src={arrow_left} alt="Flèche gauche" />
-      </button>
-      <button className='carrousel_arrow_right' onClick={nextSlide}>
-        <img src={arrow_right} alt='Flèche droite' />
-      </button>
-      <img src={pictures[current]} alt={alt} className='carrousel_img' />
-      <div className='carrousel_counter'>
-        {current +1}/{length}
-      </div>
+    <div className="carrousel">
+      {length > 1 && (
+        <>
+          <button className="carrousel_arrow_left" onClick={prevSlide}>
+            <img src={arrow_left} alt="Flèche gauche" />
+          </button>
+          <button className="carrousel_arrow_right" onClick={nextSlide}>
+            <img src={arrow_right} alt="Flèche droite" />
+          </button>
+        </>
+      )}
+      <img src={pictures[current]} alt={alt} className="carrousel_img" />
+      {length > 1 && (
+        <div className="carrousel_counter">
+          {current + 1}/{length}
+        </div>
+      )}
     </div>
   );
 }

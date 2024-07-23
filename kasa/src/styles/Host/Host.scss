@@ -4,12 +4,14 @@
     gap: 10px;
     margin-bottom: 20px;
     @media screen and (max-width:1024px) {
-        margin-bottom:16px ;
+        margin-bottom: 17px;
         
     }
     @media screen and (max-width:768px) {
-       margin-bottom: 13px;
+       margin-bottom: 0;
+        
     }
+    
     &_name{
         display: flex;
         flex-direction: column;
